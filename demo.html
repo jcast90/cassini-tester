@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset - Documentation</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <style>
+        pre {
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div style="float:left; width:20%;">
+    <ul>
+        <li>General</li>
+        <li>Containers</li>
+        <li>Typograph</li>
+        <li>Lists</li>
+        <li>Navigation</li>
+        <li>Forms</li>
+    </ul>
+</div>
+
+<div style="float:left; width: 80%;">
+
+<h1>General</h1>
+
+<p>Line height default value is defined as 1.5em</p>
+<pre>
+html {
+    line-height: 1.5;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+</pre>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>All body margins were set as zero.</p>
+<pre>
+body { 
+    margin: 0; 
+}
+</pre>
+
+<p>It was applied transparency on background colors for links.</p>
+<pre>
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+</pre>
+
+<pre>
+img {
+    display: inline-block;
+    border-style: none;
+    border: 0;
+}
+</pre>
+
+<pre>
+small {
+    font-size: 85%;
+}
+</pre>
+
+
+<h1>Containers</h1>
+
+<pre>
+figure,
+figcaption { 
+    margin: 0; 
+    padding: 0; 
+}
+</pre>
+
+<pre>
+div,
+span,
+main,
+header,
+nav,
+section,
+footer,
+aside.
+article {
+    padding: 0;
+    margin: 0;
+}
+</pre>
+
+<pre>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+</pre>
+
+
+<h1>Lists</h1>
+<p>Regular ordered and unordered lists have no bullets or symbols nor default padding value.</p>
+<pre>
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+</pre>
+
+<p>
+    <b>Ordered list</b>
+    <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+    </ul>
+    
+    <b>Unordered list</b>
+    <ol>
+        <li>List item one</li>
+        <li>List item two</li>
+    </ol>    
+</p>
+
+
+<h1>Navigation</h1>
+<p>In order to speed up development, a nav-ul-li default style was implemented with no margins and displayed inline.</p>
+<pre>
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+</pre>
+
+<p>
+<nav>
+    <ul>
+        <li><b>MENU ITEM A</b></li>
+        <li>MENU ITEM B</li>
+        <li><b>MENU ITEM C</b></li>
+    </ul>
+</nav>
+</p>
+
+<h1>Forms</h1>
+<p>It was applied line-height, no margin, border and border-shadow in order to standarlized all the form elements in different browsers.</p>
+<pre>
+input[type=text], 
+input[type=button],
+input[type=radio],
+input[type=checkbox],
+button,
+select,
+optgroup, 
+option,
+textarea {   
+    font-family: sans-serif; 
+    font-size: 100%; 
+    line-height: 1.5; 
+    margin: 0;
+    border: 1px solid auto;
+    box-shadow: inset 0px 0px 0px 0px;
+    overflow-x: visible;
+}
+</pre>
+<form>
+<input type="text" value="Input text"><br>
+<input type="radio" name="radio1"> Radio
+<input type="radio" name="radio2"> Radio<br>
+<select>
+    <optgroup label="Group 1">
+        <option>Option A</option>
+        <option>Option B</option>
+    </optgroup>
+    <option>Option C</option>
+    <option>Option D</option>
+</select><br>
+<input type="checkbox" name="checkbox"> checkbox
+<input type="checkbox" name="checkbox"> checkbox
+<input type="checkbox" name="checkbox"> checkbox<br>
+<textarea cols="50" rows="3"></textarea><br>
+<input type="button" value="Button">
+</form>
+<br><br>
+</div>    
+    
+</body>
+</html>

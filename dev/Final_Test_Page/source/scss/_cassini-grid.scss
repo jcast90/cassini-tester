@@ -1,0 +1,471 @@
+
+
+/**********************************\
+        Grid Styling Start
+\**********************************/
+
+
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration:none;
+
+}
+
+
+/* grid base size */
+.grid{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* column base styling */
+.grid-element{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    padding: 15px;
+    width: calc((100% - 20px * 1) / 1);
+}
+
+.grid-element:last-child{
+    margin-right: 10px;
+    float:right;
+}
+.grid:after{
+    display:table;
+    clear: both;
+    content: '';
+}
+.one-col-grid .grid-element,
+.two-col-grid .grid-element,
+.three-col-grid .grid-element,
+.four-col-grid .grid-element,
+.five-col-grid .grid-element,
+.six-col-grid .grid-element,
+.seven-col-grid .grid-element,
+.eight-col-grid .grid-element,
+.nine-col-grid .grid-element,
+.ten-col-grid .grid-element,
+.eleven-col-grid .grid-element,
+.twelve-col-grid .grid-element{
+    width: calc((100% - 20px * 1) / 1);
+}
+/*span shared styling*/
+.span-1,
+.span-2,
+.span-3,
+.span-4,
+.span-5,
+.span-6,
+.span-7,
+.span-8,
+.span-9,
+.span-10,
+.span-11,
+.span-12{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+}
+
+
+.span-1{
+    width: 7.1%;
+
+}
+.span-2{
+    width: 15.4%;
+}
+.span-3{
+    width: 23.8%;
+
+}
+.span-4{
+    width: 32.1%;
+}
+.span-5{
+    width:40.4% ;
+}
+.span-6{
+    width: 48.8%;
+}
+.span-7{
+    width: 57.1%;
+}
+.span-8{
+    width: 65.4%;
+}
+.span-9{
+    width: 73.8%;
+}
+.span-10{
+    width: 82.1%;
+}
+.span-11{
+    width: 90.4%;
+}
+.span-12{
+    width: 98.8%;
+}
+
+
+/* medium phone device */
+@media screen and (min-width: 480px ){
+    .one-col-grid .grid-element{
+        width: calc((100% - 20px * 1) / 1);
+
+    }
+
+    .two-col-grid .grid-element{
+        width: calc((100% - 20px * 2) / 2);
+
+    }
+    .three-col-grid .grid-element,
+    .four-col-grid .grid-element,
+    .five-col-grid .grid-element,
+    .six-col-grid .grid-element,
+    .seven-col-grid .grid-element,
+    .eight-col-grid .grid-element,
+    .nine-col-grid .grid-element,
+    .ten-col-grid .grid-element,
+    .eleven-col-grid .grid-element,
+    .twelve-col-grid .grid-element
+    {
+        width: calc((100% - 20px * 3) / 3);
+    }
+
+}
+
+ /*tablet/ phone landscape */
+@media screen and (min-width: 720px ) {
+    .one-col-grid .grid-element {
+        width: calc((100% - 20px * 1) / 1);
+
+    }
+
+    .two-col-grid .grid-element {
+        width: calc((100% - 20px * 2) / 2);
+
+    }
+
+    .three-col-grid .grid-element {
+        width: calc((100% - 20px * 3) / 3);
+    }
+
+    .four-col-grid .grid-element {
+        width: calc((100% - 20px * 4) / 4);
+    }
+
+    .five-col-grid .grid-element {
+        width: calc((100% - 20px * 5) / 5);
+    }
+
+    .six-col-grid .grid-element,
+    .seven-col-grid .grid-element,
+    .eight-col-grid .grid-element,
+    .nine-col-grid .grid-element,
+    .ten-col-grid .grid-element,
+    .eleven-col-grid .grid-element,
+    .twelve-col-grid .grid-element {
+        width: calc((100% - 20px * 6) / 6);
+    }
+}
+
+
+/*Laptop/ tablet landscape */
+@media screen and (min-width: 1024px ){
+    .one-col-grid .grid-element{
+        width: calc((100% - 20px * 1) / 1);
+    }
+    .two-col-grid .grid-element{
+        width: calc((100% - 20px * 2) / 2);
+    }
+    .three-col-grid .grid-element{
+        width: calc((100% - 20px * 3) / 3);
+    }
+    .four-col-grid .grid-element{
+        width: calc((100% - 20px * 4) / 4);
+    }
+    .five-col-grid .grid-element{
+        width: calc((100% - 20px * 5) / 5);
+    }
+    .six-col-grid .grid-element{
+        width: calc((100% - 20px * 6) / 6);
+    }
+    .seven-col-grid .grid-element{
+        width: calc((100% - 20px * 7) / 7);
+    }
+    .eight-col-grid .grid-element{
+        width: calc((100% - 20px * 8) / 8);
+    }
+    .nine-col-grid .grid-element,
+    .ten-col-grid .grid-element,
+    .eleven-col-grid .grid-element,
+    .twelve-col-grid .grid-element
+    {
+        width: calc((100% - 20px * 9) / 9);
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1200px ){
+    .one-col-grid .grid-element{
+        width: calc((100% - 20px * 1) / 1);
+    }
+    .two-col-grid .grid-element{
+        width: calc((100% - 20px * 2) / 2);
+    }
+    .three-col-grid .grid-element{
+        width: calc((100% - 20px * 3) / 3);
+    }
+    .four-col-grid .grid-element{
+        width: calc((100% - 20px * 4) / 4);
+    }
+    .five-col-grid .grid-element{
+        width: calc((100% - 20px * 5) / 5);
+    }
+    .six-col-grid .grid-element{
+        width: calc((100% - 20px * 6) / 6);
+    }
+    .seven-col-grid .grid-element{
+        width: calc((100% - 20px * 7) / 7);
+    }
+    .eight-col-grid .grid-element{
+        width: calc((100% - 20px * 8) / 8);
+    }
+    .nine-col-grid .grid-element{
+        width: calc((100% - 20px * 9) / 9);
+    }
+    .ten-col-grid .grid-element{
+        width: calc((100% - 20px * 10) / 10);
+    }
+    .eleven-col-grid .grid-element{
+        width: calc((100% - 20px * 11) / 11);
+    }
+    .twelve-col-grid .grid-element{
+        width: calc((100% - 20px * 12) / 12);
+    }
+}
+/************************************\
+
+          CSS Components Styling
+          -Navigation
+
+\************************************/
+
+
+
+
+/************************************\
+      ***Navigation Styling***
+\************************************/
+.nav-bar {
+    height: 60px;
+    width: 100%;
+    overflow:hidden;
+}
+.responsive-logo{
+    left: 0;
+    position:relative;
+    max-width: 100px;
+    max-height: 50px;
+    margin: 5px 10px 0 10px;
+    float:left;
+
+}
+.nav-bar > ul{
+    height:inherit;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0px 1px 15px  1px #c9c9c9;
+
+
+}
+
+.nav-bar > ul > li > a{
+    padding: 20px 15px;
+
+}
+.nav-bar > ul > li > a{
+    color: #333;
+    display:block;
+}
+.nav-bar > ul > li:hover{
+    background-color: rgba(201, 201, 201, .8) !important;
+    color: #333;
+
+    margin-top: 0;
+
+}
+/*hide icon for desktop view*/
+.nav-bar a.icon {
+    display:none;
+}
+/*styling for fixed nav*/
+.fixed-nav{
+    display:block;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+/*center horizontal navigation*/
+.nav-bar > ul.center{
+    text-align: center;
+
+}
+.nav-bar > ul.center > li{
+    float: none;
+
+
+}
+.nav-bar > ul.center > li > a{
+    display:inline-block;
+    padding: 15px ;
+
+}
+/**dropdown**/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:inherit;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block !important;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/****dropdown8***/
+
+
+
+/**** Dark Theme Option ***/
+.nav-bar > ul.dark > li > a{
+    color: #fff;
+}
+
+.nav-bar > ul.dark {
+    background-color: rgba(51, 51, 51, 0.8);
+}
+.nav-bar > ul.dark > li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #888888;
+}
+.nav-bar > ul.dark > li > .dropdown-content a:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+}
+.nav-bar > ul.dark > li > .dropdown-content a {
+
+    color: #fff;
+}
+
+/**** Neon theme option ****/
+.nav-bar > ul.neon > li > a{
+    color: #fff;
+}
+.nav-bar > ul.neon {
+    background-color: rgba(103, 200, 255, 0.8);
+    box-shadow: 0px 1px 15px  1px #e2e;
+}
+.nav-bar > ul.neon > li:hover {
+    background-color: rgba(238, 34, 238, 0.9);
+    box-shadow: 0px 10px 15px  1px #67C8FF;
+}
+
+.neon .dropdown-content a{
+    background-color: #red;
+    color: #fff;
+}
+.neon .dropdown-content a:hover{
+    background-color: rgba(103, 200, 255, 1);
+}
+/*left horizontal navigation*/
+.nav-bar > ul > li
+{
+
+    display:inline-block;
+    float:left;
+}
+
+
+@media screen and (max-width: 780px) {
+    .nav-bar > ul > li{display: none;}
+    .nav-bar a.icon{
+        display: block;
+        position: absolute;
+        top:0;
+        right:1.4em;
+        padding: 15px 15px 0 0;
+        font-size: 1.5em;
+        color: #373838;
+    }
+    /*styling for mobile dark theme */
+    .nav-bar .dark a.icon{
+        color: #c9c9c9;
+    }
+    /*styling for neon theme*/
+    .nav-bar .neon a.icon{
+        color:red;
+
+    }
+}
+@media screen and (max-width: 780px) {
+
+    body{
+        margin-top: 3em;
+    }
+    /*fixed menu for mobile*/
+    .nav-bar{
+        position:fixed;
+        width:100%;
+        top:0;
+    }
+
+    .nav-bar.responsive {overflow:visible;}
+    .nav-bar.responsive a.icon {
+        position: absolute;
+        right: 1.4em;
+        top: 0;
+    }
+    .nav-bar > ul > li{
+        width: 100%;
+    }
+    .nav-bar.responsive > ul > li {
+        background-color: inherit;
+        float: left;
+        display: block;
+        text-align: left;
+    }
+    .responsive .dropdown-content{
+        margin-left: 10em;
+        margin-top: -3.1em;
+    }
+}
+
+
+

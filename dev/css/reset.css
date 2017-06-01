@@ -1,0 +1,111 @@
+/* 
+    FINAL PROJECT - FEWD2 
+    reset.css
+    It includes a HTML “reset” library that standardizes all HTML tags across the browsers. Build your own, DO NOT copy an existing library like normalize.css.
+    Reference: https://www.w3schools.com/cssref/css3_browsersupport.asp
+*/
+
+/* GENERAL ---------------------------------------- */
+
+html {
+    line-height: 1.5em;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body { 
+    margin: 0; 
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+img {
+    display: inline-block;
+    border-style: none;
+    border: 0;
+}
+
+figure,
+figcaption { 
+    margin: 0; 
+    padding: 0; 
+}
+
+div,
+span,
+main,
+header,
+nav,
+section,
+footer,
+aside.
+article {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+*/
+small {
+    font-size: 85%;
+}
+
+/* END-GENERAL ---------------------------------------- */
+
+
+
+/* NAVIGATION ---------------------------------------- */
+/*
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+*/
+/* END-NAVIGATION ---------------------------------------- */
+
+
+
+/* FORMS ---------------------------------------- */
+
+input[type=text], 
+input[type=button],
+input[type=radio],
+input[type=checkbox],
+button,
+select,
+optgroup, 
+option,
+textarea {   
+    font-family: sans-serif; 
+    font-size: 100%; 
+    line-height: 1.5; 
+    margin: 0;
+    border: 1px solid auto;
+    box-shadow: inset 0px 0px 0px 0px red;
+    overflow-x: visible;
+
+}
+
+/* END-FORMS ---------------------------------------- */
